@@ -1,0 +1,41 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/src/stylesheet.css" title="Style">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<!--  <script src="/src/jquery.blockUI.js" type="text/javascript"></script> -->
+	<script src="/src/scripts.js" type="text/javascript"></script>
+</head>
+<body>
+	<script type="text/javascript">	
+		$(document).ready(function(){
+				//$(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+				pingServer();	
+				stopServer();
+		});		
+	</script>
+	
+	<div class="box middle lightGrey">
+		<div class="middle"><br/>Embedded HttpServer Demo&nbsp;<span 
+		class="tiny">(com.sun.net.httpserver)</span></div>
+		<hr/>
+		<form id="form1" name="form1" method="get" action="/question" 
+		  class="box internal grey">
+		  <input type="hidden" id="mode" name="mode" value="mathInput"/>
+		  <table width="100%">
+		  	<tr><td>&nbsp;</td></tr>
+		    <tr style="margin:12px">
+			<td><span id="lblReply" class="heavy">&nbsp;What is "4"+"2"? </span></td>
+			<td><input type="text" id="reply" name="reply"/></td>
+			<td><input type="submit" id="submitButton" title="submit" value="submit"/></td>
+			<td><input type="button" id="pingButton" value="ping"></td>
+			<td><input type="button" id="stopButton" value="end"></td>		
+			</tr>
+			<tr><td>&nbsp;</td></tr>
+		  </table>
+		</form>
+	</div>
+	<p/>
+	<div class="box middle" id="target">&nbsp;		  		
+	</div>	
+</body>
+</html>

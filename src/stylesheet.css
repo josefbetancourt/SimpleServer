@@ -1,0 +1,8 @@
+.heavy{ font-weight:bolder;}
+.box{ border:2px solid black;}
+.middle{ margin-left:auto;margin-right:auto;width:60%;}
+.internal{ margin:2em;background:#F8F8F8 ;}
+.horzCenter { margin-left:auto;margin-right:auto;width:50%;}
+.grey { background:#F8F8F8;} .lightGrey { background:#F0F0F0;}
+.large{ font-size:xx-large;padding-top:4px; padding-bottom:4px}
+body{ width:960px }  .tiny{font-size:small;}
